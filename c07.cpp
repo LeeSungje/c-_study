@@ -10,7 +10,7 @@ Unit(Unit &A){
 }
 int GetDefaultArmor() { return defaultArmor; }
 };
-int GetEnhancedArmor(Unit aUnit)
+int GetEnhancedArmor(Unit &aUnit)
 {
 return aUnit.GetDefaultArmor() * 2;
 }
