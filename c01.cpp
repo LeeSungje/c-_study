@@ -1,15 +1,12 @@
 #include<stdio.h>
 int main()
 {
-	double a=0;
-	int b;
+	int a[2]={10,20};
+	int *ptr = a;
 	
-	printf("실수 입력 : ");
-	scanf("%f", &a);
-	
-	b = a+0.5;
-	
-	printf("%f", a);
-
+	printf("%d\n", *ptr);
+	printf("%d\n", (*ptr)++);
+	printf("%d\n", *ptr++);
+	printf("%d\n", *ptr);
 	return 0;
 }
